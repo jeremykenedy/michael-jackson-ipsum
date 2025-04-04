@@ -866,3 +866,18 @@ video {
 .vs__dropdown-toggle .vs__selected .vs__deselect {
   @apply bg-gray-100 rounded-full p-1 ml-2;
 }
+
+.show-dark,
+.show-light {
+  display: none;
+}
+html.dark .show-dark {
+  display: block;
+}
+html:not(.dark) .show-light {
+  display: block;
+}
+
+.lorem-paragraphs p {
+  margin-bottom: 1em;
+}

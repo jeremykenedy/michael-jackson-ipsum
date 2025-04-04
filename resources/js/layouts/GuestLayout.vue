@@ -27,23 +27,23 @@ export default {
       return this.$route.name;
     },
     isAdminPage() {
-      if (
-        this.currentRouteName == 'admin' ||
-        this.currentRouteName == 'roles' ||
-        this.currentRouteName == 'permissions' ||
-        this.currentRouteName == 'settings' ||
-        this.currentRouteName == 'users' ||
-        this.currentRouteName == 'app-settings' ||
-        this.currentRouteName == 'phpinfo'
-      ) {
-        return true;
-      }
+      // if (
+      //   this.currentRouteName == 'admin' ||
+      //   this.currentRouteName == 'roles' ||
+      //   this.currentRouteName == 'permissions' ||
+      //   this.currentRouteName == 'settings' ||
+      //   this.currentRouteName == 'users' ||
+      //   this.currentRouteName == 'app-settings' ||
+      //   this.currentRouteName == 'phpinfo'
+      // ) {
+      //   return true;
+      // }
       return false;
     },
     showOctoCat() {
-      if (this.currentRouteName == 'home' || this.currentRouteName == 'about' || this.currentRouteName == 'terms') {
-        return true;
-      }
+      // if (this.currentRouteName == 'home' || this.currentRouteName == 'about' || this.currentRouteName == 'terms') {
+      //   return true;
+      // }
       return false;
     },
   },
