@@ -117,16 +117,14 @@ MichaelJacksonIpsum
 │   │       └── VerifyCsrfToken.php
 │   └── Providers
 │       ├── AppServiceProvider.php
-│       ├── AuthServiceProvider.php
-│       ├── BroadcastServiceProvider.php
-│       ├── EventServiceProvider.php
-│       ├── RouteServiceProvider.php
-│       └── ViewComposerServiceProvider.php
+│       └── RouteServiceProvider.php
 ├── artisan
 ├── bootstrap
 │   ├── app.php
 │   └── cache
-│       └── .gitignore
+│       ├── .gitignore
+│       ├── packages.php
+│       └── services.php
 ├── composer.json
 ├── composer.lock
 ├── config
@@ -228,7 +226,7 @@ MichaelJacksonIpsum
 ├── vite.config.js
 └── vue.config.js
 
-35 directories, 120 files
+35 directories, 118 files
 
 ```
 
