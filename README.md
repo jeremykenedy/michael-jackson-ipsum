@@ -73,7 +73,10 @@ part of this repository it is a completely separated Vue 3 front end compiled us
 ## Screenshots
 
 <p float="left">
-    <img src="https://laravel-spa.s3.us-west-2.amazonaws.com/v3/login-sm.png" title="Login Social Media" alt="Login Social Media" width="48%"/>
+    <img src="XXXXX" title="Home Page Light Mode" alt="Home Page Light Mode" width="48%"/>
+    <img src="XXXXX" title="Home Page Dark Mode" alt="Home Page Dark Mode" width="48%"/>
+    <img src="XXXXX" title="404 Page Light Mode" alt="404 Page Light Mode" width="48%"/>
+    <img src="XXXXX" title="404 Page Dark Mode" alt="404 Page Dark Mode" width="48%"/>
 </p>
 
 ## File Tree
