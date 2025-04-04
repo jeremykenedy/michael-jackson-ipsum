@@ -1,8 +1,7 @@
 <template>
   <span
     v-tippy="'Switch Theme to ' + (isDarkMode ? 'Light' : 'Dark') + ' Mode'"
-    class="mr-8"
-    :class="isLoading.value ? 'default disabled cursor-pointer' : 'cursor-pointer'"
+    class="mr-8 cursor-pointer"
     @click="switchDarkMode()"
   >
     <SwitchComp
@@ -25,9 +24,8 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'pinia';
+import { mapActions } from 'pinia';
 import useDarkMode from '@composables/darkmode';
-import { useAuthStore } from '@store/auth';
 import { Switch as SwitchComp } from '@headlessui/vue';
 import { SunIcon, MoonIcon } from '@heroicons/vue/24/outline';
 
@@ -42,14 +40,8 @@ export default {
     this.checkDarkMode();
   },
   computed: {
-    ...mapState(useAuthStore, ['user', 'authenticated']),
-    ...mapState(useDarkMode, ['isLoading']),
     isDarkMode() {
-      if (this.user && this.user.id) {
-        return this.user.theme_dark;
-      } else {
-        return this.darkMode;
-      }
+      return this.darkMode;
     },
   },
   data() {
@@ -60,24 +52,13 @@ export default {
   methods: {
     ...mapActions(useDarkMode, ['toggleDarkMode', 'enableDarkMode', 'disableDarkMode']),
     checkDarkMode() {
-      if (this.user && this.user.id) {
-        // localStorage.setItem("darkmode", this.user.theme_dark)
-        if (this.user.theme_dark) {
-          this.enableDarkMode();
-          this.darkMode = true;
-        } else {
-          this.disableDarkMode();
-          this.darkMode = false;
-        }
+      let lst = localStorage.getItem('data-theme');
+      if (lst == 'dark') {
+        this.enableDarkMode();
+        this.darkMode = true;
       } else {
-        let lst = localStorage.getItem('data-theme');
-        if (lst == 'dark') {
-          this.enableDarkMode();
-          this.darkMode = true;
-        } else {
-          this.disableDarkMode();
-          this.darkMode = false;
-        }
+        this.disableDarkMode();
+        this.darkMode = false;
       }
     },
     switchDarkMode() {

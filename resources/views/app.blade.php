@@ -4,6 +4,8 @@
         'locale' => $locale = app()->getLocale(),
         'locales' => config('app.locales'),
     ];
+    $ga_enabled = false;
+    $ga_key = null;
 @endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">

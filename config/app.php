@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Budget Master'),
+    'name' => env('APP_NAME', 'Michael Jackson Ipsum'),
 
     /*
     |--------------------------------------------------------------------------
@@ -151,14 +151,8 @@ return [
     'providers' => ServiceProvider::defaultProviders()->merge([
         // Package Service Providers...
     ])->merge([
-        App\Providers\ViewComposerServiceProvider::class,
         App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        jeremykenedy\LaravelRoles\RolesServiceProvider::class,
-        QCod\Settings\SettingsServiceProvider::class,
     ])->merge([
         // Added Service Providers (Do not remove this line)...
     ])->toArray(),

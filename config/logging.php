@@ -90,18 +90,6 @@ return [
             'level'    => env('ERROR_LOG_LEVEL', 'warning'),
         ],
 
-        'papertrail' => [
-            'driver'       => 'monolog',
-            'level'        => env('LOG_LEVEL', 'debug'),
-            'handler'      => env('LOG_PAPERTRAIL_HANDLER', SyslogUdpHandler::class),
-            'handler_with' => [
-                'host'             => env('PAPERTRAIL_URL'),
-                'port'             => env('PAPERTRAIL_PORT'),
-                'connectionString' => 'tls://'.env('PAPERTRAIL_URL').':'.env('PAPERTRAIL_PORT'),
-            ],
-            'processors' => [PsrLogMessageProcessor::class],
-        ],
-
         'stderr' => [
             'driver'    => 'monolog',
             'level'     => env('LOG_LEVEL', 'debug'),
@@ -134,15 +122,6 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
-
-        'sentry' => [
-            'driver' => 'sentry',
-            // The minimum logging level at which this handler will be triggered
-            // Available levels: debug, info, notice, warning, error, critical, alert, emergency
-            'level'  => env('LOG_LEVEL', 'error'),
-            'bubble' => true, // Whether the messages that are handled can bubble up the stack or not
-        ],
-
     ],
 
 ];

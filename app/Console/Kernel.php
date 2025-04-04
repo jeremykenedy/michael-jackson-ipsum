@@ -24,10 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
-        $schedule->command('personal-data-export:clean')->daily();
-        $schedule->command('generate-sitemap')->daily();
-        $schedule->command('model:prune')->daily();
+        //
     }
 
     /**
@@ -38,7 +35,5 @@ class Kernel extends ConsoleKernel
     protected function commands()
     {
         $this->load(__DIR__.'/Commands');
-
-        require base_path('routes/console.php');
     }
 }
