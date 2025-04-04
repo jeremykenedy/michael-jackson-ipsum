@@ -1,7 +1,6 @@
 # Michael Jackson Ipsum Generator
 
 [![StyleCI](https://github.styleci.io/repos/960221622/shield?branch=master)](https://github.styleci.io/repos/960221622?branch=master)
-[![CodeQL](https://github.com/jeremykenedy/michael-jackson-ipsum/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/jeremykenedy/michael-jackson-ipsum/actions/workflows/codeql.yml)
 [![Composer Install](https://github.com/jeremykenedy/michael-jackson-ipsum/actions/workflows/php.yml/badge.svg)](https://github.com/jeremykenedy/michael-jackson-ipsum/actions/workflows/php.yml)
 [![App Version](https://img.shields.io/github/v/tag/jeremykenedy/michael-jackson-ipsum.svg?sort=semver&label=App%20Version)](https://github.com/jeremykenedy/michael-jackson-ipsum/releases)
 [![License: MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=green&style=flat)](https://opensource.org/licenses/MIT)
