@@ -2,7 +2,6 @@ import './bootstrap';
 
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
-import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
 import router from '@routes';
 import VueSweetalert2 from 'vue-sweetalert2';
 import { plugin as VueTippy } from 'vue-tippy';
@@ -18,7 +17,6 @@ const APP_GA_ENABLED = GA_ENABLED;
 const VUE_APP_URL = APP_URL;
 
 const pinia = createPinia();
-pinia.use(piniaPluginPersistedstate);
 
 const app = createApp({
   setup() {
