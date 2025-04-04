@@ -126,9 +126,7 @@ MichaelJacksonIpsum
 ├── bootstrap
 │   ├── app.php
 │   └── cache
-│       ├── .gitignore
-│       ├── packages.php
-│       └── services.php
+│       └── .gitignore
 ├── composer.json
 ├── composer.lock
 ├── config
@@ -230,7 +228,7 @@ MichaelJacksonIpsum
 ├── vite.config.js
 └── vue.config.js
 
-35 directories, 122 files
+35 directories, 120 files
 
 ```
 
