@@ -87,7 +87,6 @@
 import { mapActions } from 'pinia';
 import { track } from '@services/analytics';
 import Lorem from '@services/words';
-import { useClipboard } from '@vueuse/core';
 import { ClipboardIcon, ClipboardDocumentCheckIcon } from '@heroicons/vue/24/outline';
 import { useToastStore } from '@store/toast';
 var lorem;

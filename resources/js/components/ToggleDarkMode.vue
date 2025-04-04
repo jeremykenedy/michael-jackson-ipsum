@@ -36,18 +36,18 @@ export default {
     MoonIcon,
     SwitchComp,
   },
-  mounted() {
-    this.checkDarkMode();
+  data() {
+    return {
+      darkMode: false,
+    };
   },
   computed: {
     isDarkMode() {
       return this.darkMode;
     },
   },
-  data() {
-    return {
-      darkMode: false,
-    };
+  mounted() {
+    this.checkDarkMode();
   },
   methods: {
     ...mapActions(useDarkMode, ['toggleDarkMode', 'enableDarkMode', 'disableDarkMode']),

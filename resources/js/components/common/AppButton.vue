@@ -35,6 +35,7 @@ export default {
     info: { type: Boolean, default: false },
     transparent: { type: Boolean, default: false },
   },
+  emits: ['buttonClicked'],
   data() {
     return {
       //

@@ -1,11 +1,6 @@
 @php
-    $config = [
-        'appName' => config('app.name'),
-        'locale' => $locale = app()->getLocale(),
-        'locales' => config('app.locales'),
-    ];
-    $ga_enabled = false;
-    $ga_key = null;
+    $ga_enabled = config('services.google.gaEnabled');
+    $ga_key = config('services.google.ga');
 @endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -36,9 +31,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-        <script>
-            window.config = @json($config);
-        </script>
         <script>
             const GA_ENABLED="{{ $ga_enabled }}"
             const GA_TAG="{{ $ga_key }}"

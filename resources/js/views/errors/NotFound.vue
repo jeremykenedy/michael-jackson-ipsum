@@ -10,12 +10,8 @@
               Looks like you've found a hidden dance party!
             </h1>
             <p class="my-7 text-gray-800 dark:text-white">Boom ski tahh boom boom.. hee hee.</p>
-            <router-link :to="authenticated ? { name: 'dashboard' } : { name: 'home' }">
-              <AppButton
-                secondary
-                :text="authenticated ? 'Go to Dashboard' : 'Go Home'"
-                class="py-4 px-8 w-full lg:w-auto"
-              />
+            <router-link :to="{ name: 'home' }">
+              <AppButton secondary text="Go Home" class="py-4 px-8 w-full lg:w-auto" />
             </router-link>
           </div>
         </div>
@@ -33,39 +29,16 @@
 <script lang="ts">
 import fourZeroFour from '@img/404.png';
 import fourZeroFourLight from '@img/404-light.png';
-
-import plugs from '@img/plugs.png';
-import { mapStores, mapState, mapActions } from 'pinia';
-import { useAuthStore } from '@/store/auth';
-
 import mikeLight from '@img/mj/mj-light.png';
 import mikeDark from '@img/mj/mj-dark.png';
 
 export default {
   name: 'NotFound',
-  components: {},
-  props: {},
-  setup() {
-    return {};
-  },
-  data() {
-    return {
-      //
-    };
-  },
-  computed: {
-    ...mapState(useAuthStore, ['user', 'authenticated']),
-  },
-  watch: {},
-  created() {},
   mounted() {
     document.getElementById('mikeLight').src = mikeLight;
     document.getElementById('mikeDark').src = mikeDark;
     document.getElementById('fourZeroFour').src = fourZeroFour;
     document.getElementById('fourZeroFourLight').src = fourZeroFourLight;
   },
-  beforeUnmount() {},
-  updated() {},
-  methods: {},
 };
 </script>

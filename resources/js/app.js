@@ -1,23 +1,15 @@
 import './bootstrap';
 
-import { createApp, ref, watchEffect } from 'vue';
-import { createPinia, storeToRefs } from 'pinia';
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
 import router from '@routes';
 import VueSweetalert2 from 'vue-sweetalert2';
 import { plugin as VueTippy } from 'vue-tippy';
 import AppButton from '@components/common/AppButton.vue';
-import AppSwitch from '@components/common/AppSwitch.vue';
-import i18n from './plugins/i18n';
-
 import VueGtag from 'vue-gtag-next';
 import swal from 'sweetalert2';
-
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'sweetalert2/dist/sweetalert2.min.css';
-import 'vue-select/dist/vue-select.css';
-import 'vue-awesome-paginate/dist/style.css';
-import 'vue3-easy-data-table/dist/style.css';
 
 window.Swal = swal;
 
@@ -52,9 +44,7 @@ app.use(VueTippy, {
     allowHTML: true,
   },
 });
-app.use(i18n);
 if (APP_GA_ENABLED == 1) {
-  let UID = null;
   app.use(VueGtag, {
     property: {
       id: APP_GA_TAG,
@@ -68,5 +58,4 @@ if (APP_GA_ENABLED == 1) {
   });
 }
 app.component('AppButton', AppButton);
-app.component('AppSwitch', AppSwitch);
 app.mount('#app');
