@@ -107,18 +107,13 @@ MichaelJacksonIpsum
 │   ├── Exceptions
 │   │   └── Handler.php
 │   ├── Http
-│   │   ├── Controllers
-│   │   │   └── Controller.php
 │   │   ├── Kernel.php
 │   │   └── Middleware
-│   │       ├── Authenticate.php
 │   │       ├── EncryptCookies.php
 │   │       ├── PreventRequestsDuringMaintenance.php
-│   │       ├── RedirectIfAuthenticated.php
 │   │       ├── TrimStrings.php
 │   │       ├── TrustHosts.php
 │   │       ├── TrustProxies.php
-│   │       ├── ValidateSignature.php
 │   │       └── VerifyCsrfToken.php
 │   └── Providers
 │       ├── AppServiceProvider.php
@@ -190,49 +185,12 @@ MichaelJacksonIpsum
 │   │   │   ├── favicon.ico
 │   │   │   ├── favicon.png
 │   │   │   └── site.webmanifest
-│   │   ├── fonts
-│   │   │   ├── Leckerli_One
-│   │   │   │   ├── LeckerliOne-Regular.ttf
-│   │   │   │   └── OFL.txt
-│   │   │   ├── Nunito
-│   │   │   │   ├── Nunito-Italic-VariableFont_wght.ttf
-│   │   │   │   ├── Nunito-VariableFont_wght.ttf
-│   │   │   │   ├── OFL.txt
-│   │   │   │   ├── README.txt
-│   │   │   │   └── static
-│   │   │   │       ├── Nunito-Black.ttf
-│   │   │   │       ├── Nunito-BlackItalic.ttf
-│   │   │   │       ├── Nunito-Bold.ttf
-│   │   │   │       ├── Nunito-BoldItalic.ttf
-│   │   │   │       ├── Nunito-ExtraBold.ttf
-│   │   │   │       ├── Nunito-ExtraBoldItalic.ttf
-│   │   │   │       ├── Nunito-ExtraLight.ttf
-│   │   │   │       ├── Nunito-ExtraLightItalic.ttf
-│   │   │   │       ├── Nunito-Italic.ttf
-│   │   │   │       ├── Nunito-Light.ttf
-│   │   │   │       ├── Nunito-LightItalic.ttf
-│   │   │   │       ├── Nunito-Medium.ttf
-│   │   │   │       ├── Nunito-MediumItalic.ttf
-│   │   │   │       ├── Nunito-Regular.ttf
-│   │   │   │       ├── Nunito-SemiBold.ttf
-│   │   │   │       └── Nunito-SemiBoldItalic.ttf
-│   │   │   └── Quicksand
-│   │   │       ├── OFL.txt
-│   │   │       ├── Quicksand-VariableFont_wght.ttf
-│   │   │       ├── README.txt
-│   │   │       └── static
-│   │   │           ├── Quicksand-Bold.ttf
-│   │   │           ├── Quicksand-Light.ttf
-│   │   │           ├── Quicksand-Medium.ttf
-│   │   │           ├── Quicksand-Regular.ttf
-│   │   │           └── Quicksand-SemiBold.ttf
-│   │   ├── mj
-│   │   │   ├── mj-dark.png
-│   │   │   ├── mj-head-dark.png
-│   │   │   ├── mj-head-light.png
-│   │   │   ├── mj-light.jpg
-│   │   │   └── mj-light.png
-│   │   └── plugs.png
+│   │   └── mj
+│   │       ├── mj-dark.png
+│   │       ├── mj-head-dark.png
+│   │       ├── mj-head-light.png
+│   │       ├── mj-light.jpg
+│   │       └── mj-light.png
 │   ├── js
 │   │   ├── app.js
 │   │   ├── bootstrap.js
@@ -247,20 +205,10 @@ MichaelJacksonIpsum
 │   │   │       └── MichaelIpsum.vue
 │   │   ├── composables
 │   │   │   └── darkmode.js
-│   │   ├── lang
-│   │   │   ├── bn.json
-│   │   │   ├── en.json
-│   │   │   ├── es.json
-│   │   │   ├── fr.json
-│   │   │   ├── pt-BR.json
-│   │   │   └── zh-CN.json
 │   │   ├── layouts
 │   │   │   └── GuestLayout.vue
-│   │   ├── plugins
-│   │   │   └── i18n.js
 │   │   ├── routes
 │   │   │   ├── index.js
-│   │   │   ├── middleware.js
 │   │   │   └── routes.js
 │   │   ├── services
 │   │   │   ├── analytics.js
@@ -268,8 +216,6 @@ MichaelJacksonIpsum
 │   │   ├── store
 │   │   │   ├── index.js
 │   │   │   └── toast.js
-│   │   ├── validation
-│   │   │   └── rules.js
 │   │   └── views
 │   │       ├── errors
 │   │       │   └── NotFound.vue
@@ -284,7 +230,7 @@ MichaelJacksonIpsum
 ├── vite.config.js
 └── vue.config.js
 
-45 directories, 166 files
+35 directories, 122 files
 
 ```
 
