@@ -1,11 +1,8 @@
 # Michael Jackson Ipsum Generator
 
-[![StyleCI](https://github.styleci.io/repos/537735029/shield?branch=released&style=flat)](https://github.styleci.io/repos/537735029?branch=master)
+[![StyleCI](https://github.styleci.io/repos/960221622/shield?branch=master)](https://github.styleci.io/repos/960221622?branch=master)
 [![CodeQL](https://github.com/jeremykenedy/michael-jackson-ipsum/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/jeremykenedy/michael-jackson-ipsum/actions/workflows/codeql.yml)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=jeremykenedy_michael-jackson-ipsum&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jeremykenedy_michael-jackson-ipsum)
-[![GitGuardian scan](https://github.com/jeremykenedy/michael-jackson-ipsum/actions/workflows/gitguardian.yml/badge.svg)](https://github.com/jeremykenedy/michael-jackson-ipsum/actions/workflows/gitguardian.yml)
 [![Composer Install](https://github.com/jeremykenedy/michael-jackson-ipsum/actions/workflows/php.yml/badge.svg)](https://github.com/jeremykenedy/michael-jackson-ipsum/actions/workflows/php.yml)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=jeremykenedy_michael-jackson-ipsum&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=jeremykenedy_michael-jackson-ipsum)
 [![App Version](https://img.shields.io/github/v/tag/jeremykenedy/michael-jackson-ipsum.svg?sort=semver&label=App%20Version)](https://github.com/jeremykenedy/michael-jackson-ipsum/releases)
 [![License: MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=green&style=flat)](https://opensource.org/licenses/MIT)
 
@@ -31,7 +28,7 @@ part of this repository it is a completely separated Vue 3 front end compiled us
 
 ## App Features
 ##### Built on:
-- [✅ Laravel 11](https://github.com/laravel/laravel)
+- [✅ Laravel 12](https://github.com/laravel/laravel)
 - [✅ Vite](https://laravel.com/docs/9.x/vite)
 - [✅ Vue 3](https://github.com/vuejs/vue)
 - [✅ TailwindCSS (w/ `@tailwindcss/forms` and `@tailwindcss/aspect-ratio`)](https://tailwindcss.com/)
@@ -93,17 +90,13 @@ MichaelJacksonIpsum
 │   ├── labeler.yml
 │   └── workflows
 │       ├── build-changelog.yml
-│       ├── codacy.yml
-│       ├── codeql.yml
 │       ├── dependency-review.yml
 │       ├── deploy.yml
-│       ├── gitguardian.yml
 │       ├── greetings.yml
 │       ├── labeler.yml
 │       ├── laravel.yml
 │       ├── node.js.yml
 │       ├── php.yml
-│       ├── sentry.yml
 │       └── stale.yml
 ├── .gitignore
 ├── .prettierignore
@@ -297,7 +290,7 @@ MichaelJacksonIpsum
 ├── vite.config.js
 └── vue.config.js
 
-45 directories, 170 files
+45 directories, 166 files
 
 ```
 
