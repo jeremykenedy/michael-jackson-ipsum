@@ -72,7 +72,7 @@ part of this repository it is a completely separated Vue 3 front end compiled us
 
 ## File Tree
 ```
-MichaelJacksonIpsum
+.
 ├── .editorconfig
 ├── .env.example
 ├── .eslintrc.js
@@ -129,21 +129,9 @@ MichaelJacksonIpsum
 ├── composer.lock
 ├── config
 │   ├── app.php
-│   ├── auth.php
-│   ├── broadcasting.php
-│   ├── cache.php
-│   ├── cors.php
-│   ├── database.php
-│   ├── filesystems.php
-│   ├── hashing.php
 │   ├── logging.php
-│   ├── mail.php
-│   ├── queue.php
-│   ├── request-docs.php
 │   ├── services.php
-│   ├── session.php
-│   ├── settings.php
-│   └── view.php
+│   └── settings.php
 ├── eslint.config.js
 ├── package-lock.json
 ├── package.json
@@ -181,12 +169,11 @@ MichaelJacksonIpsum
 │   │   │   ├── favicon.ico
 │   │   │   ├── favicon.png
 │   │   │   └── site.webmanifest
-│   │   └── mj
-│   │       ├── mj-dark.png
-│   │       ├── mj-head-dark.png
-│   │       ├── mj-head-light.png
-│   │       ├── mj-light.jpg
-│   │       └── mj-light.png
+│   │   └── logo
+│   │       ├── logo-dark.png
+│   │       ├── logo-light.png
+│   │       ├── main-dark.png
+│   │       └── main-light.png
 │   ├── js
 │   │   ├── app.js
 │   │   ├── bootstrap.js
@@ -198,7 +185,7 @@ MichaelJacksonIpsum
 │   │   │   │   ├── AppFooter.vue
 │   │   │   │   └── AppNav.vue
 │   │   │   └── ipsums
-│   │   │       └── MichaelIpsum.vue
+│   │   │       └── IpsumComponent.vue
 │   │   ├── composables
 │   │   │   └── darkmode.js
 │   │   ├── layouts
@@ -226,7 +213,7 @@ MichaelJacksonIpsum
 ├── vite.config.js
 └── vue.config.js
 
-35 directories, 118 files
+35 directories, 105 files
 
 ```
 
