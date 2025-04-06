@@ -5,17 +5,10 @@
     :disabled="loading || disabled"
     @click="clickButton"
   >
-    <slot
-      v-if="hasTextSlot"
-      name="text"
-    />
+    <slot v-if="hasTextSlot" name="text" />
     <span v-else>
       {{ text }}
-      <span
-        v-if="icon"
-        class="fa-fw"
-        :class="icon"
-      />
+      <span v-if="icon" class="fa-fw" :class="icon" />
       {{ textAfter }}
     </span>
   </button>

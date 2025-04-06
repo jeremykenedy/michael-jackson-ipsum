@@ -17,15 +17,8 @@
         class="pointer-events-none inline-block h-[16px] w-[16px] transform rounded-full shadow-lg ring-0 transition duration-200 ease-in-out"
       />
 
-      <SunIcon
-        v-if="!isDarkMode"
-        class="text-white h-4 w-4"
-      />
-      <MoonIcon
-        v-if="isDarkMode"
-        class="absolute h-4 w-4 text-gray-800"
-        style="left: -1px"
-      />
+      <SunIcon v-if="!isDarkMode" class="text-white h-4 w-4" />
+      <MoonIcon v-if="isDarkMode" class="absolute h-4 w-4 text-gray-800" style="left: -1px" />
     </SwitchComp>
   </span>
 </template>

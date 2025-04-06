@@ -13,37 +13,17 @@
               {{ appNotFountText }}
             </p>
             <router-link :to="{ name: 'home' }">
-              <AppButton
-                secondary
-                text="Go Home"
-                class="py-4 px-8 w-full lg:w-auto"
-              />
+              <AppButton secondary text="Go Home" class="py-4 px-8 w-full lg:w-auto" />
             </router-link>
           </div>
         </div>
       </div>
     </div>
     <div>
-      <img
-        id="mainLight"
-        :alt="appName"
-        class="show-light text-center ml-auto mr-auto w-40"
-      >
-      <img
-        id="mainDark"
-        :alt="appName"
-        class="show-dark text-center ml-auto mr-auto w-40"
-      >
-      <img
-        id="fourZeroFour"
-        alt="404"
-        class="show-dark w-40 mt-3"
-      >
-      <img
-        id="fourZeroFourLight"
-        alt="404"
-        class="show-light w-40 mt-3"
-      >
+      <img id="mainLight" :alt="appName" class="show-light text-center ml-auto mr-auto w-40" />
+      <img id="mainDark" :alt="appName" class="show-dark text-center ml-auto mr-auto w-40" />
+      <img id="fourZeroFour" alt="404" class="show-dark w-40 mt-3" />
+      <img id="fourZeroFourLight" alt="404" class="show-light w-40 mt-3" />
     </div>
   </div>
 </template>

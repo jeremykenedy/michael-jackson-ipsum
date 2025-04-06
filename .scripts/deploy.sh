@@ -37,9 +37,6 @@ deployArtisanCommands() {
 deployFrontEnd() {
     npm install
     npm update
-    npm run clean
-    npm run lint
-    npm run optimize
     npm run build
 }
 
