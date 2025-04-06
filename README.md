@@ -146,8 +146,6 @@ part of this repository it is a completely separated Vue 3 front end compiled us
 │   ├── favicon-32x32.png
 │   ├── favicon.ico
 │   ├── favicon.png
-│   ├── images
-│   │   └── placeholder.jpg
 │   ├── index.php
 │   ├── robots.txt
 │   ├── serviceworker.js
@@ -213,7 +211,7 @@ part of this repository it is a completely separated Vue 3 front end compiled us
 ├── vite.config.js
 └── vue.config.js
 
-35 directories, 105 files
+34 directories, 104 files
 
 ```
 
