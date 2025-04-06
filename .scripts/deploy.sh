@@ -34,11 +34,6 @@ deployArtisanCommands() {
     php artisan optimize
 }
 
-deployMigrationsAndSeeds() {
-    php artisan migrate --force
-    php artisan db:seed
-}
-
 deployFrontEnd() {
     npm install
     npm update
@@ -58,7 +53,6 @@ deploy() {
     deployGit
     deployComposer
     deployArtisanCommands
-    deployMigrationsAndSeeds
     deployFrontEnd
     deployFinish
 }
