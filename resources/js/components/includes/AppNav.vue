@@ -8,8 +8,16 @@
           <router-link :to="{ name: 'home' }">
             <span class="sr-only">{{ appName }}</span>
             <div>
-              <img id="LogoLight" alt="{{ appName }}" class="show-light text-center ml-auto mr-auto w-10" />
-              <img id="LogoDark" alt="{{ appName }}" class="show-dark text-center ml-auto mr-auto w-10" />
+              <img
+                id="LogoLight"
+                :alt="appName"
+                class="show-light text-center ml-auto mr-auto w-10"
+              >
+              <img
+                id="LogoDark"
+                :alt="appName"
+                class="show-dark text-center ml-auto mr-auto w-10"
+              >
             </div>
           </router-link>
         </div>

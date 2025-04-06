@@ -29,8 +29,14 @@
     @click.prevent="copyToClipboard()"
   >
     <template #text>
-      <ClipboardIcon v-if="!clipped" class="ml-2 mr-2 mt-0 h-4 w-4" />
-      <ClipboardDocumentCheckIcon v-if="clipped" class="ml-2 mr-2 mt-0 h-4 w-4" />
+      <ClipboardIcon
+        v-if="!clipped"
+        class="ml-2 mr-2 mt-0 h-4 w-4"
+      />
+      <ClipboardDocumentCheckIcon
+        v-if="clipped"
+        class="ml-2 mr-2 mt-0 h-4 w-4"
+      />
 
       <span class="sr-only">Copy to Clipboard</span>
     </template>
@@ -51,7 +57,7 @@
           max="100"
           placeholder="1"
           aria-describedby="ipsum_type"
-        />
+        >
 
         <input
           v-if="type == 'words'"
@@ -62,7 +68,7 @@
           min="1"
           placeholder="1"
           aria-describedby="ipsum_type"
-        />
+        >
 
         <div
           id="ipsum_type"
@@ -78,8 +84,15 @@
     id="ipsum_content"
     class="my-3 p-4 pb-0 border border-gray-300 rounded-lg text-left lorem-paragraphs bg-white text-gray-700 dark:bg-gray-900 dark:text-gray-200"
   >
-    <div id="paragraph" ref="paragraph" />
-    <div id="words" ref="words" class="mb-4" />
+    <div
+      id="paragraph"
+      ref="paragraph"
+    />
+    <div
+      id="words"
+      ref="words"
+      class="mb-4"
+    />
   </div>
 </template>
 

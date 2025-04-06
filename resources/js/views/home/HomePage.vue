@@ -2,8 +2,16 @@
   <div class="p-12">
     <div class="text-center">
       <div class="mb-5 flex items-center justify-between">
-        <img id="mainLight" alt="{{ appName }}" class="show-light text-center ml-auto mr-auto w-40" />
-        <img id="mainDark" alt="{{ appName }}" class="show-dark text-center ml-auto mr-auto w-40" />
+        <img
+          id="mainLight"
+          :alt="appName"
+          class="show-light text-center ml-auto mr-auto w-40"
+        >
+        <img
+          id="mainDark"
+          :alt="appName"
+          class="show-dark text-center ml-auto mr-auto w-40"
+        >
       </div>
       <h1 class="text-4xl mb-5 quicksand-font text-slate-500 dark:text-slate-300">
         {{ appName }}

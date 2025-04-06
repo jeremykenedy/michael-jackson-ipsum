@@ -1,6 +1,9 @@
 <template>
   <footer :class="footerClass">
-    <div class="border-t py-4" :class="borderClass">
+    <div
+      class="border-t py-4"
+      :class="borderClass"
+    >
       <p class="text-center text-sm leading-6 text-slate-500 dark:text-gray-300">
         &copy; {{ theYear }} {{ company }}. All rights reserved.
       </p>
