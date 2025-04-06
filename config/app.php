@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Michael Jackson Ipsum'),
+    'name' => env('APP_NAME', 'Ipsum Generator'),
 
     /*
     |--------------------------------------------------------------------------

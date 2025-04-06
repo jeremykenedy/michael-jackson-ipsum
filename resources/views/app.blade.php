@@ -36,6 +36,8 @@
             const GA_TAG="{{ $ga_key }}"
             const APP_URL="{{ config('app.url') }}"
             const APP_NAME="{{ config('app.name') }}"
+            const APP_NOT_FOUND_TITLE="{{ config('settings.not_fount_title') }}"
+            const APP_NOT_FOUND_TEXT="{{ config('settings.not_fount_text') }}"
         </script>
         @vite(['resources/css/app.css'])
     </head>

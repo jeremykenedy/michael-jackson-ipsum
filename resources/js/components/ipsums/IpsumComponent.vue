@@ -92,7 +92,7 @@ import { useToastStore } from '@store/toast';
 var lorem;
 
 export default {
-  name: 'MichaelIpsum',
+  name: 'IpsumComponent',
   components: {
     ClipboardIcon,
     ClipboardDocumentCheckIcon,
