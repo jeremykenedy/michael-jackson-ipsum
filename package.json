@@ -18,7 +18,7 @@
         "@vitejs/plugin-legacy": "^6.0.1",
         "@vitejs/plugin-vue": "^5.2.1",
         "autoprefixer": "^10.4.20",
-        "eslint": "^9.23.0",
+        "eslint": "^9.32.0",
         "eslint-plugin-vue": "^9.33.0",
         "laravel-vite-plugin": "^1.2.0",
         "postcss": "^8.5.1",
