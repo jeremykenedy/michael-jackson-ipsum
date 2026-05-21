@@ -36,7 +36,7 @@
         "@headlessui/vue": "^1.7.23",
         "@tailwindcss/vite": "^4.0.1",
         "axios": "^1.7.9",
-        "js-cookie": "^3.0.5",
+        "js-cookie": "^3.0.7",
         "pinia": "^2.3.1",
         "sweetalert2": "^11.16.1",
         "vite-plugin-eslint": "^1.8.1",
